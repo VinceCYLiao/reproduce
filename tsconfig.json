@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    // es6 for MaterialUI ref: https://next.material-ui.com/guides/typescript/#main-content
+    "lib": ["es6", "dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/utils/*": ["src/utils/*"],
+      "@/api/*": ["src/api/*"],
+      "@/ui-kit/*": ["ui-kit/components/*"],
+      "@/ui-kit/utils/*": ["ui-kit/components/utils/*"],
+      "@/ui-kit/assets/*": ["ui-kit/assets/*"],
+      "@/components/*": ["src/components/*"],
+      "@/styles/*": ["src/styles/*"],
+      "@/store/*": ["src/store/*"],
+      "@/hooks/*": ["src/hooks/*"],
+      "@/public/*": ["public/*"],
+      "@/assets/*": ["src/assets/*"],
+      "@/mocks/*": ["src/__mocks__/*"],
+      "@/pages/*": ["src/pages/*"]
+    },
+    // let ts understand emotion css prop
+    "jsxImportSource": "@emotion/react"
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "index.d.ts"],
+  "exclude": ["node_modules", ".next", "**/*.test.t[s|sx]"]
+}

@@ -1,0 +1,9 @@
+next.config.js
+/ui-kit/*/*.jsx
+server.js
+/.next
+/node_modules
+/src/utils/pse2ee.js
+createEmotionCache.js
+jest*.js
+/src/__mocks__
